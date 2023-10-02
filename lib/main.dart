@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_maps/google-places.dart';
 import 'package:flutter_google_maps/latlng-to-address.dart';
-import 'package:flutter_google_maps/shuff.dart';
+import 'package:flutter_google_maps/map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: GooglePlacesApi(),
     );
   }
 }
